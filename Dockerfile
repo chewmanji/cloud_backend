@@ -3,6 +3,7 @@ WORKDIR /app
 
 FROM base AS build
 COPY . .
+RUN chmod +x ./gradlew
 RUN ./gradlew clean build
 
 FROM base

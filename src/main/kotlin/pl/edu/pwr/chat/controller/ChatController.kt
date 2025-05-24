@@ -11,7 +11,7 @@ import java.time.LocalDateTime
 
 
 @RestController
-@RequestMapping("chat")
+@RequestMapping("api/chat")
 class ChatController @Autowired constructor(
     private val chatService: ChatService
 ) {

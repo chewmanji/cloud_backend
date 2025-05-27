@@ -5,5 +5,6 @@ import java.time.LocalDateTime
 data class MessageTO(
     val username: String,
     val message: String,
+    val isFile: Boolean,
     val timestamp:LocalDateTime
 )

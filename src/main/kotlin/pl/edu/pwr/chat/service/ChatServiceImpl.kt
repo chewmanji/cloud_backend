@@ -21,6 +21,7 @@ class ChatServiceImpl @Autowired constructor(
             MessageTO(
                 username = msg.username,
                 message = msg.message,
+                isFile = msg.isFile,
                 timestamp = msg.timestamp
             )
         }
@@ -33,6 +34,7 @@ class ChatServiceImpl @Autowired constructor(
             MessageTO(
                 username = msg.username,
                 message = msg.message,
+                isFile = msg.isFile,
                 timestamp = msg.timestamp
             )
         }
@@ -43,6 +45,7 @@ class ChatServiceImpl @Autowired constructor(
         val chatMessage = ChatMessage(
             username = messageDTO.username,
             message = messageDTO.message,
+            isFile = messageDTO.isFile,
             timestamp = LocalDateTime.now()
         )
 

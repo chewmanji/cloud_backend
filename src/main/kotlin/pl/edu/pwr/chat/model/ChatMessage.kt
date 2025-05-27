@@ -1,9 +1,6 @@
 package pl.edu.pwr.chat.model
 
-import jakarta.persistence.Entity
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
+import jakarta.persistence.*
 import java.time.LocalDateTime
 
 
@@ -15,5 +12,6 @@ data class ChatMessage(
     val id: Long = 0,
     val username: String,
     val message: String,
+    val isFile: Boolean = false,
     val timestamp: LocalDateTime
 )
